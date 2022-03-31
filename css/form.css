@@ -3,7 +3,6 @@
     grid-template-columns: 1fr auto;
     gap: 24px;
     padding: 15px;
-    border-top: 1px solid rgb(205,208,210);
 }
 
 .form__button {
@@ -23,8 +22,7 @@
     background: rgb(0,128,128);
     border: none;
     font-family: 'Lato', sans-serif;
-    color: rgb(255,255,255);
-    
+    color: rgb(255,255,255);   
 }
 
 @media (max-width: 700px) {
