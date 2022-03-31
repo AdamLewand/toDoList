@@ -1,13 +1,5 @@
 {
-    const tasks = [
-        {
-            done: false,
-        },
-        {
-            done: true,
-        },
-
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -23,8 +15,8 @@
     }
 
     const toggleTaskDone = (index) => {
-       tasks[index].done = !tasks[index].done; 
-       render();
+        tasks[index].done = !tasks[index].done;
+        render();
     }
 
     const render = () => {
@@ -32,7 +24,9 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li>
+            <li
+             ${task.done ? "style=\"text-decoration: line-through\"" : ""}
+            >
                 <button class="js-done">zrobione</button>
                 ${task.content}
                 <button class="js-remove">usuń</button>
