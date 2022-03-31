@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.background{
+    background: rgb(231, 230, 230);
+    
+}
+
+.section,
+.section__list{
+    background-color: white;
+    border: none;
+    max-width: 700px;
+    margin: 10px 0;
+      
+}    
+
+.button{
+    background: teal;
+    color: white;
+  }
+  .tasks__button{
+    border:none;
+    color:white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.container{
+    padding: 20px;
+    margin: 5px;
+}
+
+.js-form {
+    text-align: end;
+}
