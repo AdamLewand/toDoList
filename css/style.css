@@ -6,37 +6,16 @@ html {
     box-sizing: inherit;
 }
 
-.background{
+.body{
     background: rgb(231, 230, 230);
+    font-family: 'Lato', sans-serif;
+    word-break: break-word;
+ 
+}
+
+.main{
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
     
-}
-
-.section,
-.section__list{
-    background-color: white;
-    border: none;
-    max-width: 700px;
-    margin: 10px 0;
-      
-}    
-
-.button{
-    background: teal;
-    color: white;
-  }
-  .tasks__button{
-    border:none;
-    color:white;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-}
-
-.container{
-    padding: 20px;
-    margin: 5px;
-}
-
-.js-form {
-    text-align: end;
 }
