@@ -32,6 +32,7 @@
            `;
         }
 
+
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -51,20 +52,24 @@
         });
     };
 
+
     render();
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim();
 
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value ="";
 
         }
 
-        addNewTask(newTaskContent);
+        newTaskElement.focus();
 
     };
+
 
     const init = () => {
         render();
