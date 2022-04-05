@@ -4,15 +4,14 @@
 
 .section{
     margin-bottom: 20px;
-    background: rgb(255,255,255);
-    
+    background: rgb(255,255,255);  
 }
 
 .section__header {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding: 10px 15px;
+    border-bottom: solid 2px rgb( 232, 232, 232);
     
 }
 

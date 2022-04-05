@@ -12,12 +12,12 @@
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
-    }
+    };
 
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
-    }
+    };
 
     const render = () => {
         let htmlString = "";
@@ -30,7 +30,7 @@
                 <div class="task__button"><button class="button js-remove button__task--remove">🗑️</button></div>
             </li>
            `;
-        }
+        };
 
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -64,7 +64,7 @@
             addNewTask(newTaskContent);
             newTaskElement.value ="";
 
-        }
+        };
 
         newTaskElement.focus();
 
